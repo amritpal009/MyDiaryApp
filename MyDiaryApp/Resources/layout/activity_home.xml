@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:padding="10dp">
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:text="Diary App"
+        android:fontFamily="@font/robot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <RadioGroup  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp">  
+  
+        <RadioButton  
+            android:id="@+id/radioAdd"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:text="  Add Diary Entry"  
+            android:layout_marginTop="10dp"  
+            android:checked="false" 
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/robot"
+            android:textSize="20dp" />  
+  
+        <RadioButton  
+            android:id="@+id/radioView"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:text="   View All Entry"  
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/robot"
+            android:layout_marginTop="20dp"  
+            android:checked="false"  
+  
+            android:textSize="20dp" />
+            <RadioButton  
+            android:id="@+id/radioDelete"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:text="   Delete Entry"  
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/robot"
+            android:layout_marginTop="20dp"  
+            android:checked="false"  
+  
+            android:textSize="20dp" />
+    </RadioGroup>  
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump to View"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="17dp"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/colorBack">
+
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <EditText
+        android:id="@+id/etSubject"
+        android:hint="Entry Subject"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:padding="8dp"/>
+        <EditText
+        android:id="@+id/etDetails"
+        android:hint="Entry Details"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:padding="8dp"
+            android:layout_below="@id/etSubject"/>
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateEntry"
+            android:background="#FFFFFF"
+            android:layout_marginTop="17dp"
+            android:layout_below="@id/etDetails"/>
+        <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:layout_below="@id/dateEntry"
+        android:layout_marginTop="17dp" />
+    </RelativeLayout>
+
+</ScrollView>
+
